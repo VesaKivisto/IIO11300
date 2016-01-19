@@ -33,11 +33,24 @@ namespace Tehtava1
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
+            double windowWidth = double.Parse(txtWidht.Text);
+            double windowHeight = double.Parse(txtHeight.Text);
+            double frameWidth = double.Parse(txtFrameWidht.Text);
+
             //TODO
             try
             {
-                double result;
-                result = BusinessLogicWindow.CalculatePerimeter(1, 1);
+                double perimeterResult;
+                perimeterResult = BusinessLogicWindow.CalculatePerimeter(windowWidth, windowHeight);
+                txtFramePiiriTulos.Text = perimeterResult.ToString();
+
+                double windowAreaResult;
+                windowAreaResult = BusinessLogicWindow.CalculateWindowArea(windowWidth, windowHeight);
+                txtAlaTulos.Text = windowAreaResult.ToString();
+
+                double frameAreaResult;
+                frameAreaResult = BusinessLogicWindow.CalculateFrameArea(windowWidth, windowHeight, frameWidth, windowAreaResult);
+                txtFrameAlaTulos.Text = frameAreaResult.ToString();
             }
             catch (Exception ex)
             {

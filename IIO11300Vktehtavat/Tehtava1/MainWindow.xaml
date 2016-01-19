@@ -5,20 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tehtava1"
         mc:Ignorable="d"
-        Title="Oy K-S Windows Ab" Height="350" Width="700" FontSize="18">
+        Title="Oy K-S Windows Ab" Height="417.307" Width="856.73" FontSize="18">
     <Grid>
-    <StackPanel Orientation="Horizontal">
-      <StackPanel Orientation="Vertical">
-        <TextBlock x:Name="tbWidht" Text="Ikkunan leveys" Height="28" Margin="10,10,10,0" />
-        <TextBox x:Name="txtWidht" Text="600" Height="28" Width="114" Margin="10,10,10,0" />
-      </StackPanel>
-            <StackPanel Orientation="Vertical">
-                <Rectangle x:Name="myRectangle" Fill="#FF10ABF3" StrokeThickness="2" Width="300" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Stroke="Black" />
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Width="177">
+                <TextBlock x:Name="tbWidht" Text="Ikkunan leveys" Height="30" Margin="10,10,27,0" />
+                <TextBox x:Name="txtWidht" Text="1200" Height="30" Margin="10,0,50,0" />
+                <TextBlock x:Name="tbHeight" Text="Ikkunan korkeus" Height="30" Margin="10,10,27,0"/>
+                <TextBox x:Name="txtHeight" Text="900" Height="30" Margin="10,0,50,0" />
+                <TextBlock x:Name="tbFrameWidht" Text="Karmipuun leveys" Height="30" Margin="10,10,27,0"/>
+                <TextBox x:Name="txtFrameWidht" Text="45" Height="30" Margin="10,0,50,0" />
             </StackPanel>
-            <StackPanel Orientation="Vertical">
-        <Button x:Name="btnCalculate" Content="Laske pinta-ala ja piiri" Height="32" Width="180" Click="btnCalculate_Click" Margin="10,10,10,0" Background="#FF1DC0D1"/>
-        <Button x:Name="btnClose" Content="Sulje" Height="32" Width="180" Click="btnClose_Click" Margin="10,10,10,0"/>
-      </StackPanel>
-    </StackPanel>
-  </Grid>
+            <StackPanel Orientation="Vertical" Width="442">
+                <Rectangle x:Name="myRectangle" Fill="#FF10ABF3" StrokeThickness="10" Width="402" Height="226" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="21,48,18,10" Stroke="Black" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="230" Margin="0,0,0,10">
+                <TextBlock x:Name="tbAla" Text="Ikkunan pinta-ala" Height="30" Margin="42,10,25,0" />
+                <TextBox x:Name="txtAlaTulos" Height="30" Margin="42,0,51,0" />
+                <TextBlock x:Name="tbFramePiiri" Text="Karmin piiri" Height="30" Margin="42,20,25,0"/>
+                <TextBox x:Name="txtFramePiiriTulos" Height="30" Margin="42,0,51,0" />
+                <TextBlock x:Name="tbFrameAla" Text="Karmin pinta-ala" Height="30" Margin="42,10,25,0"/>
+                <TextBox x:Name="txtFrameAlaTulos" Height="30" Margin="42,0,51,0" />
+                <Button x:Name="btnCalculate" Content="Laske pinta-ala ja piiri" Height="32" Width="180" Click="btnCalculate_Click" Margin="10,30,10,0" Background="#FF1DC0D1"/>
+                <Button x:Name="btnClose" Content="Sulje" Height="32" Width="180" Click="btnClose_Click" Margin="10,10,10,0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
 </Window>
