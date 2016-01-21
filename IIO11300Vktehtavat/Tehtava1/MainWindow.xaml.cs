@@ -42,15 +42,15 @@ namespace Tehtava1
             {
                 double perimeterResult;
                 perimeterResult = BusinessLogicWindow.CalculatePerimeter(windowWidth, windowHeight);
-                txtFramePiiriTulos.Text = perimeterResult.ToString();
+                txtFramePiiriTulos.Text = Math.Round(perimeterResult, 2).ToString() + " m";
 
                 double windowAreaResult;
                 windowAreaResult = BusinessLogicWindow.CalculateWindowArea(windowWidth, windowHeight);
-                txtAlaTulos.Text = windowAreaResult.ToString();
+                txtAlaTulos.Text = Math.Round(windowAreaResult, 2).ToString() + " m^2"; ;
 
                 double frameAreaResult;
-                frameAreaResult = BusinessLogicWindow.CalculateFrameArea(windowWidth, windowHeight, frameWidth, windowAreaResult);
-                txtFrameAlaTulos.Text = frameAreaResult.ToString();
+                frameAreaResult = BusinessLogicWindow.CalculateFrameArea(windowWidth, windowHeight, frameWidth);
+                txtFrameAlaTulos.Text = Math.Round(frameAreaResult, 2).ToString() + " m^2"; ;
             }
             catch (Exception ex)
             {

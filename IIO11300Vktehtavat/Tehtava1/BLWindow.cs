@@ -13,19 +13,19 @@ namespace Tehtava1
         /// </summary>
         public static double CalculatePerimeter(double width, double height)
         {
-            double framePerimeter = width * 2 + height * 2;
+            double framePerimeter = (width * 2 + height * 2) / 1000;
             return framePerimeter;
         }
 
         public static double CalculateWindowArea(double width, double height)
         {
-            double windowArea = width * height;
+            double windowArea = (width * height) / 1000000;
             return windowArea;
         }
 
-        public static double CalculateFrameArea(double width, double height, double frameWidth, double windowArea)
+        public static double CalculateFrameArea(double width, double height, double frameWidth)
         {
-            double frameArea = windowArea - (width - 2 * frameWidth) * (height - 2 * frameWidth);
+            double frameArea = ((2 * frameWidth + height) * (2 * frameWidth + width) - (width * height)) / 1000000;
             return frameArea;
         }
     }

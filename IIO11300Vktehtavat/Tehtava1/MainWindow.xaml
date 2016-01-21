@@ -10,11 +10,11 @@
         <StackPanel Orientation="Horizontal">
             <StackPanel Orientation="Vertical" Width="177">
                 <TextBlock x:Name="tbWidht" Text="Ikkunan leveys" Height="30" Margin="10,10,27,0" />
-                <TextBox x:Name="txtWidht" Text="1200" Height="30" Margin="10,0,50,0" />
+                <TextBox x:Name="txtWidht" Height="30" Margin="10,0,50,0" />
                 <TextBlock x:Name="tbHeight" Text="Ikkunan korkeus" Height="30" Margin="10,10,27,0"/>
-                <TextBox x:Name="txtHeight" Text="900" Height="30" Margin="10,0,50,0" />
+                <TextBox x:Name="txtHeight" Height="30" Margin="10,0,50,0" />
                 <TextBlock x:Name="tbFrameWidht" Text="Karmipuun leveys" Height="30" Margin="10,10,27,0"/>
-                <TextBox x:Name="txtFrameWidht" Text="45" Height="30" Margin="10,0,50,0" />
+                <TextBox x:Name="txtFrameWidht" Height="30" Margin="10,0,50,0" />
             </StackPanel>
             <StackPanel Orientation="Vertical" Width="442">
                 <Rectangle x:Name="myRectangle" Fill="#FF10ABF3" StrokeThickness="10" Width="402" Height="226" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="21,48,18,10" Stroke="Black" />
