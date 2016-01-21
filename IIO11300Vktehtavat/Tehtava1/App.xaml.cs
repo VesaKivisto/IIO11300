@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Tehtava1
+namespace JAMK.IT.IIO113000
 {
   /// <summary>
   /// Interaction logic for App.xaml
