@@ -7,8 +7,20 @@
         mc:Ignorable="d"
         Title="My Finest Media Player" Height="350" Width="525" FontSize="18">
     <Grid>
-        <Button x:Name="btnPlay" Content="Soita rockia" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="btnPause" Content="Pauseta soitto" HorizontalAlignment="Left" Margin="125,10,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="btnStop" Content="Soitto seis" HorizontalAlignment="Left" Margin="230,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="txtFileName" Width="350" Margin="10,10,10,5"/>
+                <Button x:Name="btnBrowse" Content="Browse" Margin="0,10,0,5" Width="70" Height="25" FontSize="14" Click="btnBrowse_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnPlay" Content="Play" HorizontalAlignment="Left" Margin="10,5,5,5" VerticalAlignment="Top" Width="70" Height="25" FontSize="14" Click="btnPlay_Click"/>
+                <Button x:Name="btnPause" Content="Pause" HorizontalAlignment="Left" Margin="10,5,5,5" VerticalAlignment="Top" Width="70" Height="25" FontSize="14" Click="btnPause_Click" IsEnabled="False"/>
+                <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="10,5,5,5" VerticalAlignment="Top" Width="70" Height="25" FontSize="14" Click="btnStop_Click" IsEnabled="False"/>
+                <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="10,5,5,5" VerticalAlignment="Top" Width="70" Height="25" FontSize="14" Click="btnClose_Click"/>
+            </StackPanel>
+            <StackPanel>
+                <MediaElement x:Name="mediaElement" Width="500" Height="220" Margin="10,5,10,10" LoadedBehavior="Manual" UnloadedBehavior="Stop"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
