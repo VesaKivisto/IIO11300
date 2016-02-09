@@ -1,0 +1,16 @@
+﻿<Window x:Class="Tehtava4.Save"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava4"
+        mc:Ignorable="d"
+        Title="Save" Height="167.671" Width="288.493">
+    <Grid>
+        <TextBox x:Name="txtTiedosto" HorizontalAlignment="Left" Height="23" Margin="120,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblTiedosto" Content="Tallennustiedosto:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSelaa" Content="Selaa" HorizontalAlignment="Left" Margin="120,48,0,0" VerticalAlignment="Top" Width="120" Click="btnSelaa_Click"/>
+        <Button x:Name="btnOk" Content="OK" HorizontalAlignment="Left" Margin="120,81,0,0" VerticalAlignment="Top" Width="120" Click="btnOk_Click"/>
+
+    </Grid>
+</Window>

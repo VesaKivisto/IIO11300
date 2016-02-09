@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tehtava4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="282.723" Width="525">
+        Title="SM-liiga" Height="261.808" Width="677.148">
     <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Horizontal">
             <StackPanel Orientation="Vertical">
@@ -21,18 +21,23 @@
                 <ComboBox x:Name="cboSeura" Width="125" Margin="5, 10, 10, 5"></ComboBox>
             </StackPanel>
             <StackPanel Orientation="Vertical">
-                <Button x:Name="btnLuo" Content="Luo uusi pelaaja" Margin="5, 10, 10, 5"></Button>
-                <Button x:Name="btnTallenna" Content="Tallenna pelaaja" Margin="5, 7, 10, 5"></Button>
-                <Button x:Name="btnPoista" Content="Poista pelaaja" Margin="5, 8, 10, 5"></Button>
-                <Button x:Name="btnKirjoita" Content="Kirjoita pelaajat" Margin="5, 10, 10, 5"></Button>
-                <Button x:Name="btnLopeta" Content="Lopetus" Margin="5, 10, 10, 5"></Button>
+                <Button x:Name="btnLuo" Content="Luo uusi pelaaja" Margin="5, 10, 10, 5" Click="btnLuo_Click"></Button>
+                <Button x:Name="btnTallenna" Content="Tallenna pelaaja" Margin="5, 7, 10, 5" Click="btnTallenna_Click"></Button>
+                <Button x:Name="btnPoista" Content="Poista pelaaja" Margin="5, 8, 10, 5" Click="btnPoista_Click"></Button>
+                <Button x:Name="btnKirjoita" Content="Kirjoita pelaajat" Margin="5, 10, 10, 5" Click="btnKirjoita_Click"></Button>
+                <Button x:Name="btnLopeta" Content="Lopeta" Margin="5, 10, 10, 5" Click="btnLopeta_Click"></Button>
             </StackPanel>
             <StackPanel>
-                <ListBox x:Name="lbPelaajat" Margin="5, 10, 10, 5" Width="175" Height="200"></ListBox>
+                <ListBox x:Name="lbPelaajat" Margin="5, 10, 10, 5" Width="182" Height="156" SelectionChanged="lbPelaajat_SelectionChanged"/>
             </StackPanel>
+            <Image x:Name="imgPelaaja"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <StatusBar x:Name="staIlmoitukset" Margin="10, 10, 10, 5" Width="500" Height="20"/>
+            <StatusBar x:Name="staIlmoitukset" Margin="10, 10, 10, 5" Width="500" Height="34">
+                <StatusBarItem>
+                    <Label x:Name="lblIlmoitus"/>
+                </StatusBarItem>
+            </StatusBar>
         </StackPanel>
     </StackPanel>
 </Window>
