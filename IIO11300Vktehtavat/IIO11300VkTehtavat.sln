@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava3", "Tehtava3\Tehtav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava4", "Tehtava4\Tehtava4.csproj", "{DEF9D64F-DAB6-4EFF-9563-989427475546}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H4TyontekijatConsole", "H4TyontekijatConsole\H4TyontekijatConsole.csproj", "{12AB2B68-A8A8-4D15-BC17-D6A70C2D31EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H4TyontekijatWPF", "H4TyontekijatWPF\H4TyontekijatWPF.csproj", "{0050928C-08DB-4360-80B6-9E01F3F3AE61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{DEF9D64F-DAB6-4EFF-9563-989427475546}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEF9D64F-DAB6-4EFF-9563-989427475546}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEF9D64F-DAB6-4EFF-9563-989427475546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12AB2B68-A8A8-4D15-BC17-D6A70C2D31EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12AB2B68-A8A8-4D15-BC17-D6A70C2D31EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12AB2B68-A8A8-4D15-BC17-D6A70C2D31EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12AB2B68-A8A8-4D15-BC17-D6A70C2D31EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0050928C-08DB-4360-80B6-9E01F3F3AE61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0050928C-08DB-4360-80B6-9E01F3F3AE61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0050928C-08DB-4360-80B6-9E01F3F3AE61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0050928C-08DB-4360-80B6-9E01F3F3AE61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
