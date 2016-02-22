@@ -1,0 +1,32 @@
+﻿<Window x:Class="Tehtava6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <XmlDataProvider x:Key="WineData" Source="Resources\Viinit1.xml" XPath="/viinikellari/wine" />
+    </Window.Resources>
+    <Grid>
+        <Grid.DataContext>
+            <XmlDataProvider x:Name="xdpWines" Source="Resources\Viinit1.xml" XPath="/viinikellari/wine" />
+        </Grid.DataContext>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnGet" Content="Get wines" Width="100" Height="25" Margin="10" Click="btnGet_Click" />
+                <ComboBox x:Name="cbCountry" Width="150" Height="25" Margin="10"/>
+            </StackPanel>
+            <StackPanel>
+                <DataGrid x:Name="dgdWines" DataContext="{StaticResource WineData}" ItemsSource="{Binding XPath=/viinikellari/wine}" AutoGenerateColumns="False" Margin="10" Height="250" VerticalScrollBarVisibility="Visible">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Wine" Binding="{Binding XPath=nimi}" />
+                        <DataGridTextColumn Header="Points" Binding="{Binding XPath=arvio}" />
+                        <DataGridTextColumn Header="Country" Binding="{Binding XPath=maa}"  Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

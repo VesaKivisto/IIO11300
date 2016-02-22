@@ -16,7 +16,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml;
 using System.Xml.Serialization;
-using System.IO;
 
 namespace Tehtava4
 {
