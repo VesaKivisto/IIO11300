@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -24,32 +25,74 @@ namespace Tehtava6
     /// </summary>
     public partial class MainWindow : Window
     {
-        XmlDocument xd;
         XElement xe;
-        XmlNodeList countryNodes;
+        
         public MainWindow()
         {
             InitializeComponent();
-            CountrySelectorData();
-        }
 
-        public void CountrySelectorData()
-        {
-            string file = "..\\..\\Resources\\Viinit1.xml";
-            xd = new XmlDocument();
-            xd.Load(file);
-            countryNodes = xd.SelectNodes("/viinikellari/wine/maa");
-            List<string> countries = new List<string>();
-            foreach (XmlElement item in countryNodes)
+            try
             {
-                countries.Add(item.InnerText);
+                cbCountry.SelectedIndex = 0;
+                xe = XElement.Load(ConfigurationManager.AppSettings["file"]);
             }
-            cbCountry.ItemsSource = countries.Distinct();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnGet_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                dgdWines.Items.Clear();
 
+                if (cbCountry.SelectedItem.ToString() == "All")
+                {
+                    foreach (XElement wine in xe.Elements("wine"))
+                    {
+                        dgdWines.Items.Add(wine);
+                    }
+                }
+                else
+                {
+                    foreach (XElement wine in xe.Elements("wine"))
+                    {
+                        if (wine.Element("maa").Value == cbCountry.SelectedItem.ToString())
+                        {
+                            dgdWines.Items.Add(wine);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void cbCountry_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                XmlDocument xd = new XmlDocument();
+                xd.Load(ConfigurationManager.AppSettings["file"]);
+                XmlNodeList countryNodes = xd.SelectNodes("/viinikellari/wine/maa");
+                cbCountry.Items.Add("All");
+
+                foreach (XmlNode name in countryNodes)
+                {
+                    if (!cbCountry.Items.Contains(name.InnerText))
+                    {
+                        cbCountry.Items.Add(name.InnerText);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

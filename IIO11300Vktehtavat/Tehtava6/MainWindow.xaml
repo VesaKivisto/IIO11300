@@ -6,9 +6,6 @@
         xmlns:local="clr-namespace:Tehtava6"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Window.Resources>
-        <XmlDataProvider x:Key="WineData" Source="Resources\Viinit1.xml" XPath="/viinikellari/wine" />
-    </Window.Resources>
     <Grid>
         <Grid.DataContext>
             <XmlDataProvider x:Name="xdpWines" Source="Resources\Viinit1.xml" XPath="/viinikellari/wine" />
@@ -16,14 +13,14 @@
         <StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Button x:Name="btnGet" Content="Get wines" Width="100" Height="25" Margin="10" Click="btnGet_Click" />
-                <ComboBox x:Name="cbCountry" Width="150" Height="25" Margin="10"/>
+                <ComboBox x:Name="cbCountry" Width="150" Height="25" Margin="10" Loaded="cbCountry_Loaded"/>
             </StackPanel>
             <StackPanel>
-                <DataGrid x:Name="dgdWines" DataContext="{StaticResource WineData}" ItemsSource="{Binding XPath=/viinikellari/wine}" AutoGenerateColumns="False" Margin="10" Height="250" VerticalScrollBarVisibility="Visible">
+                <DataGrid x:Name="dgdWines" AutoGenerateColumns="False" Margin="10" Height="250" VerticalScrollBarVisibility="Visible">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Wine" Binding="{Binding XPath=nimi}" />
-                        <DataGridTextColumn Header="Points" Binding="{Binding XPath=arvio}" />
-                        <DataGridTextColumn Header="Country" Binding="{Binding XPath=maa}"  Width="*"/>
+                        <DataGridTextColumn Header="Wine" Binding="{Binding Path=Element[nimi].Value}" />
+                        <DataGridTextColumn Header="Points" Binding="{Binding Path=Element[arvio].Value}" />
+                        <DataGridTextColumn Header="Country" Binding="{Binding Path=Element[maa].Value}"  Width="*"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </StackPanel>
