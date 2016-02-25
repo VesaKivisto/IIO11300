@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -33,32 +34,38 @@ namespace Tehtava7
             int uppercase = password.Count(c => char.IsUpper(c));
             int lowercase = password.Count(c => char.IsLower(c));
             int numbers = password.Count(c => char.IsNumber(c));
-            int specials = Regex.Matches(password, "[~!@#$%^&*()_+{}:\"<>?]").Count;
+            int specials = password.Count(c => !char.IsLetterOrDigit(c));
+
+            int charTypes = 0;
+            if (uppercase != 0) charTypes++;
+            if (lowercase != 0) charTypes++;
+            if (numbers != 0) charTypes++;
+            if (specials != 0) charTypes++;
 
             if (characters == 0)
             {
                 background.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF8F8F8F"));
                 tbNotice.Text = "Enter password";
             }
-            else if (characters < 8)
+            else if (characters < 8 || charTypes == 1)
             {
                 // BAD
                 background.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFDE8D00"));
                 tbNotice.Text = "Bad";
             }
-            else if (characters < 12)
+            else if (characters < 12 || charTypes == 2)
             {
                 // FAIR
                 background.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFBF118"));
                 tbNotice.Text = "Fair";
             }
-            else if (characters < 16)
+            else if (characters < 16 || charTypes == 3)
             {
                 // MODERATE
                 background.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF00F359"));
                 tbNotice.Text = "Moderate";
             }
-            else if (characters >= 16)
+            else if (characters >= 16 || charTypes == 4)
             {
                 // GOOD
                 background.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF079100"));
