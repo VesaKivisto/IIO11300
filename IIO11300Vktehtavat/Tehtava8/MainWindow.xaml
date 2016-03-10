@@ -1,0 +1,27 @@
+﻿<Window x:Class="Tehtava8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="446.338">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="200">
+                <Button x:Name="btnGetCustomers" Content="Hae asiakkaat" Width="100" Margin="10, 10, 10, 10" Click="btnGetCustomers_Click"/>
+                <ListBox x:Name="lbCustomers" Height="250" Margin="10, 10, 10, 10" ItemsSource="{Binding}" DisplayMemberPath="lastname" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Visible" SelectionChanged="lbCustomers_SelectionChanged" />
+            </StackPanel>
+            <StackPanel x:Name="spRight" Width="200" Margin="10, 10, 10, 10">
+                <TextBlock Text="Etunimi" />
+                <TextBox Text="{Binding Path=firstname, Mode=OneWay}" />
+                <TextBlock Text="Sukunimi" />
+                <TextBox Text="{Binding Path=lastname, Mode=OneWay}" />
+                <TextBlock Text="Osoite" />
+                <TextBox Text="{Binding Path=address, Mode=OneWay}" />
+                <TextBlock Text="Kaupunki" />
+                <TextBox Text="{Binding Path=city, Mode=OneWay}" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
