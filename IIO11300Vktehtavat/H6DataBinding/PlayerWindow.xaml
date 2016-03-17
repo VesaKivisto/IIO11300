@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:H6DataBinding"
         mc:Ignorable="d"
-        Title="PlayerWindow" Height="300" Width="600">
+        Title="PlayerWindow" Height="300" Width="517.621">
     <Grid>
         <StackPanel Orientation="Horizontal">
             <!-- Vasemmanpuoleinen StackPanel esittää yksittäisen pelaajan tietoja -->
@@ -13,7 +13,7 @@
                 <TextBlock Text="Pelaaja:" />
                 <TextBlock x:Name="tbPlayer" Text="{Binding Path=NameAndNumber, Mode=OneWay}" Background="LightCyan" />
                 <TextBlock Text="Nimi:" />
-                <TextBox x:Name="txtName" Text="{Binding Path=Name, Mode=TwoWay}"/>
+                <TextBox x:Name="txtName" Text="{Binding Path=Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBlock Text="Numero:" />
                 <TextBox x:Name="txtNumber" Text="{Binding Path=Number, Mode=TwoWay}"/>
             </StackPanel>
