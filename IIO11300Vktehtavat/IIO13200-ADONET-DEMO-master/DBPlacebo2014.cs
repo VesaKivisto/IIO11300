@@ -52,6 +52,7 @@ namespace JAMK.ICT.Data
         }
         public static DataTable GetCitiesFromSQLServer(string connectionStr, string taulu)
         {
+            string viesti;
             try
             {
                 SqlConnection myConn = new SqlConnection(connectionStr);
@@ -64,6 +65,7 @@ namespace JAMK.ICT.Data
             }
             catch (Exception ex)
             {
+                viesti = ex.Message;
                 throw;
             }
         }
