@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H10ADOBlanco", "IIO13200-AD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H9Bookshop", "BookShop\H9Bookshop.csproj", "{FD44597F-867E-4042-82F0-8CFB16050BF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava10", "Tehtava10\Tehtava10.csproj", "{25713DDC-5816-4429-857B-45FA8EEA7DC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{FD44597F-867E-4042-82F0-8CFB16050BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD44597F-867E-4042-82F0-8CFB16050BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD44597F-867E-4042-82F0-8CFB16050BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25713DDC-5816-4429-857B-45FA8EEA7DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25713DDC-5816-4429-857B-45FA8EEA7DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25713DDC-5816-4429-857B-45FA8EEA7DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25713DDC-5816-4429-857B-45FA8EEA7DC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
