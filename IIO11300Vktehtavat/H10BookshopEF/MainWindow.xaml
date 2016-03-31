@@ -1,0 +1,58 @@
+﻿<Window x:Class="H10BookshopEF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:H10BookshopEF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="438.444" Width="710.011">
+    <Grid>
+        <DockPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" LastChildFill="True">
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                <StackPanel x:Name="spMenu">
+                    <Button x:Name="btnGetCustomers" Content="Get customers EF" Margin="5, 5, 5, 0" Click="btnGetCustomers_Click" />
+                    <Button x:Name="btnGetBooks" Content="Get books EF" Margin="5, 5, 5, 0" Click="btnGetBooks_Click" />
+                    <ComboBox x:Name="cbCountries" ItemsSource="{Binding}" Height="26" Margin="5, 5, 5, 0" Visibility="Hidden" SelectionChanged="cbCountries_SelectionChanged" />
+                </StackPanel>
+                    <StackPanel x:Name="spBook" Orientation="Horizontal" Background="LightBlue" Width="280">
+                        <StackPanel Orientation="Vertical" Margin="10, 0, 0, 0">
+                            <TextBlock Text="Product" Margin="5" />
+                            <TextBlock Text="Name" Margin="5" />
+                            <TextBlock Text="Author" Margin="5" />
+                            <TextBlock Text="Country" Margin="5" />
+                            <TextBlock Text="Year" Margin="5" />
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Width="200" Margin="5, 5, 0, 5" Text="{Binding Path=DisplayName, Mode=OneWay}" HorizontalAlignment="Left"/>
+                            <TextBox Width="200" Margin="5, 5, 0, 3" Text="{Binding Path=name, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"/>
+                            <TextBox Width="200" Margin="5, 4, 0, 4" Text="{Binding Path=author, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"/>
+                            <TextBox Width="200" Margin="5, 5, 0, 3" Text="{Binding Path=country}" HorizontalAlignment="Left"/>
+                            <TextBox Width="50" Margin="5, 4, 0, 5" Text="{Binding Path=year}" HorizontalAlignment="Left"/>
+                            <Button x:Name="btnSave" Content="Save" Margin="5, 0, 0, 5" Width="125" HorizontalAlignment="Left" Click="btnSave_Click"/>
+                            <Button x:Name="btnNew" Content="New" Margin="5, 0, 0, 5" Width="125" HorizontalAlignment="Left" Click="btnNew_Click"/>
+                            <Button x:Name="btnDelete" Content="Delete" Margin="5, 0, 0, 10" Width="125" HorizontalAlignment="Left" Click="btnDelete_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel x:Name="spCustomer" Orientation="Horizontal" Background="LightCyan" Width="290">
+                        <StackPanel Orientation="Vertical" Margin="10, 0, 0, 0">
+                            <TextBlock Text="Customer" Margin="5" />
+                            <TextBlock Text="First name" Margin="5" />
+                            <TextBlock Text="Last name" Margin="5" />
+                            <TextBlock Text="Orders" Margin="5" />
+                        </StackPanel>
+                        <StackPanel>
+                            <!-- Olion propertyt ovat casesensitive -->
+                            <TextBlock Width="200" Margin="5, 5, 0, 5" Text="{Binding Path=DisplayName, Mode=OneWay}" HorizontalAlignment="Left"/>
+                            <TextBox Width="200" Margin="5, 5, 0, 3" Text="{Binding Path=firstname, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"/>
+                            <TextBox Width="200" Margin="5, 4, 0, 4" Text="{Binding Path=lastname, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"/>
+                            <TextBox Width="25"  Margin="5, 4, 0, 4"  Text="{Binding Path=OrderCount, Mode=OneWay}" HorizontalAlignment="Left" />
+                            <Button x:Name="btnGetOrders" Content="Get customer's orders" Margin="5, 0, 0, 10" Width="125" HorizontalAlignment="Left" Click="btnGetOrders_Click" />
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            <StackPanel>
+                <DataGrid x:Name="dgBooks" Height="185" AutoGenerateColumns="True" ItemsSource="{Binding}" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" SelectionChanged="dgBooks_SelectionChanged" />
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>
