@@ -1,0 +1,44 @@
+﻿<Window x:Class="Tehtava11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava11"
+        mc:Ignorable="d"
+        Title="SM-liiga" Height="296.954" Width="533.691">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <Label x:Name="lblEtunimi" Content="Etunimi" Margin="5, 5, 10, 5"></Label>
+                <Label x:Name="lblSukunimi" Content="Sukunimi" Margin="5, 2, 10, 5"></Label>
+                <Label x:Name="lblSiirtohinta" Content="Siirtohinta" Margin="5, 2, 10, 5"></Label>
+                <Label x:Name="lblSeura" Content="Seura" Margin="5, 5, 10, 5"></Label>
+            </StackPanel>
+            <StackPanel x:Name="spPelaaja" Orientation="Vertical">
+                <TextBox x:Name="txtEtunimi" Width="125" Margin="5, 10, 10, 5" Text="{Binding Path=etunimi}"></TextBox>
+                <TextBox x:Name="txtSukunimi" Width="125" Margin="5, 10, 10, 5" Text="{Binding Path=sukunimi}"></TextBox>
+                <TextBox x:Name="txtSiirtohinta" Width="125" Margin="5, 10, 10, 5" Text="{Binding Path=arvo}"></TextBox>
+                <ComboBox x:Name="cboSeura" Width="125" Margin="5, 10, 10, 5" Text="{Binding Path=seura}"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Button x:Name="btnLuo" Content="Luo uusi pelaaja" Margin="5, 10, 10, 5" Click="btnLuo_Click"></Button>
+                <Button x:Name="btnTallenna" Content="Tallenna pelaaja" Margin="5, 7, 10, 5" Click="btnTallenna_Click"></Button>
+                <Button x:Name="btnPoista" Content="Poista pelaaja" Margin="5, 8, 10, 5" Click="btnPoista_Click"></Button>
+                <Button x:Name="btnHae" Content="Hae kannasta" Margin="5, 10, 10, 5" Click="btnHae_Click"></Button>
+                <Button x:Name="btnTallennaKantaan" Content="Tallenna kantaan" Margin="5, 10, 10, 5" Click="btnTallennaKantaan_Click"></Button>
+                <Button x:Name="btnLopeta" Content="Lopeta" Margin="5, 10, 10, 5" Click="btnLopeta_Click"></Button>
+            </StackPanel>
+            <StackPanel>
+                <ListBox x:Name="lbPelaajat" Margin="5, 10, 10, 5" Width="182" Height="156" SelectionChanged="lbPelaajat_SelectionChanged"/>
+            </StackPanel>
+            <Image x:Name="imgPelaaja"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <StatusBar x:Name="staIlmoitukset" Margin="10, 10, 10, 5" Width="500" Height="34">
+                <StatusBarItem>
+                    <Label x:Name="lblIlmoitus"/>
+                </StatusBarItem>
+            </StatusBar>
+        </StackPanel>
+    </StackPanel>
+</Window>

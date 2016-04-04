@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AE298D50-7570-44EA-879F-3240B7AE9D96}</ProjectGuid>
+    <ProjectGuid>{E6880953-DB55-4E81-BF58-D8F8B4478335}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>H10BookshopEF</RootNamespace>
-    <AssemblyName>H10BookshopEF</AssemblyName>
+    <RootNamespace>Tehtava11</RootNamespace>
+    <AssemblyName>Tehtava11</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -46,7 +46,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
@@ -67,6 +66,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pelaajat.cs">
+      <DependentUpon>SMLiigaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMLiigaAdditions.cs" />
+    <Compile Include="SMLiigaModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMLiigaModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMLiigaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMLiigaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMLiigaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMLiigaModel.edmx</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,40 +93,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Book.cs">
-      <DependentUpon>BookshopModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="BookShopAdditions.cs" />
-    <Compile Include="BookshopModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BookshopModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="BookshopModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BookshopModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="BookshopModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BookshopModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Customer.cs">
-      <DependentUpon>BookshopModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Order.cs">
-      <DependentUpon>BookshopModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Orderitem.cs">
-      <DependentUpon>BookshopModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -126,33 +116,33 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="BookshopModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BookshopModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="BookshopModel.edmx.diagram">
-      <DependentUpon>BookshopModel.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <EntityDeploy Include="SMLiigaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SMLiigaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="SMLiigaModel.edmx.diagram">
+      <DependentUpon>SMLiigaModel.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BookshopModel.Context.tt">
+    <Content Include="SMLiigaModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BookshopModel.edmx</DependentUpon>
-      <LastGenOutput>BookshopModel.Context.cs</LastGenOutput>
+      <DependentUpon>SMLiigaModel.edmx</DependentUpon>
+      <LastGenOutput>SMLiigaModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="BookshopModel.tt">
+    <Content Include="SMLiigaModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BookshopModel.edmx</DependentUpon>
-      <LastGenOutput>BookshopModel.cs</LastGenOutput>
+      <DependentUpon>SMLiigaModel.edmx</DependentUpon>
+      <LastGenOutput>SMLiigaModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
