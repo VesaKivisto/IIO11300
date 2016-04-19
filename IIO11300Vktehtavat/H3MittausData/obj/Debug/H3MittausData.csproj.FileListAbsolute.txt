@@ -1,0 +1,13 @@
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\bin\Debug\H3MittausData.exe.config
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\bin\Debug\H3MittausData.exe
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\bin\Debug\H3MittausData.pdb
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\obj\Debug\MainWindow.g.cs
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\obj\Debug\App.g.cs
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\obj\Debug\H3MittausData_MarkupCompile.cache
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\obj\Debug\H3MittausData_MarkupCompile.lref
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\obj\Debug\MainWindow.baml
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\obj\Debug\H3MittausData.g.resources
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\obj\Debug\H3MittausData.Properties.Resources.resources
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\obj\Debug\H3MittausData.csproj.GenerateResource.Cache
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\obj\Debug\H3MittausData.exe
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H3MittausData\obj\Debug\H3MittausData.pdb

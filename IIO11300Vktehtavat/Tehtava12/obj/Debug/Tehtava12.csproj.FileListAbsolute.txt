@@ -1,0 +1,11 @@
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava12\bin\Debug\Tehtava12.exe.config
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava12\bin\Debug\Tehtava12.exe
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava12\bin\Debug\Tehtava12.pdb
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava12\obj\Debug\Tehtava12.csprojResolveAssemblyReference.cache
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava12\obj\Debug\Tehtava12.Form1.resources
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava12\obj\Debug\Tehtava12.Properties.Resources.resources
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava12\obj\Debug\Tehtava12.csproj.GenerateResource.Cache
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava12\obj\Debug\Tehtava12.exe
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava12\obj\Debug\Tehtava12.pdb
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava12\obj\Debug\Tehtava12.WinFormStrings.resources
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava12\obj\Debug\Tehtava12.WinFormStrings-en-GB.resources

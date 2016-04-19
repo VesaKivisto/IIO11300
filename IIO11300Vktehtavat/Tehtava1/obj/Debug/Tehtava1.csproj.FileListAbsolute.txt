@@ -1,0 +1,14 @@
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\bin\Debug\Tehtava1.exe.config
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\bin\Debug\Tehtava1.exe
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\bin\Debug\Tehtava1.pdb
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\obj\Debug\Tehtava1.csprojResolveAssemblyReference.cache
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\obj\Debug\MainWindow.g.cs
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\obj\Debug\App.g.cs
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\obj\Debug\Tehtava1_MarkupCompile.cache
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\obj\Debug\Tehtava1_MarkupCompile.lref
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\obj\Debug\MainWindow.baml
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\obj\Debug\Tehtava1.g.resources
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\obj\Debug\Tehtava1.csproj.GenerateResource.Cache
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\obj\Debug\Tehtava1.exe
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\obj\Debug\Tehtava1.pdb
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\Tehtava1\obj\Debug\JAMK.IT.IIO113000.Properties.Resources.resources

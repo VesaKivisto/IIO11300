@@ -1,0 +1,13 @@
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\bin\Debug\H8ADONETLasnaolotWPF.exe.config
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\bin\Debug\H8ADONETLasnaolotWPF.exe
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\bin\Debug\H8ADONETLasnaolotWPF.pdb
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\obj\Debug\App.g.cs
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\obj\Debug\H8ADONETLasnaolotWPF_MarkupCompile.cache
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\obj\Debug\H8ADONETLasnaolotWPF_MarkupCompile.lref
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\obj\Debug\MainWindow.baml
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\obj\Debug\H8ADONETLasnaolotWPF.g.resources
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\obj\Debug\H8ADONETLasnaolotWPF.Properties.Resources.resources
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\obj\Debug\H8ADONETLasnaolotWPF.csproj.GenerateResource.Cache
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\obj\Debug\H8ADONETLasnaolotWPF.exe
+C:\Users\Vesa\Documents\GitHubVisualStudio\IIO11300\IIO11300Vktehtavat\H8ADONETLasnaolotWPF\obj\Debug\H8ADONETLasnaolotWPF.pdb
